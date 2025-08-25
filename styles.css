@@ -1,0 +1,190 @@
+html body{
+    overflow: hidden;
+}
+
+.parent{
+    position: relative;
+}#logo{
+    display: block;
+}
+ .maingame{
+    opacity: 0.5;
+    pointer-events: none;
+    scale: 0.5;
+    display: none;
+ }
+
+.child{
+    width: 50%;
+    position: absolute;
+    top: 80%;
+    left: 45%;
+}
+.how{
+    font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  color: black;
+}
+.box{
+    box-shadow: 0 0 10px rgb(47, 36, 255);
+    border: 1px solid rgb(13, 0, 255);
+    overflow-y: auto;
+    position: relative;
+}
+/* FOR SCROLLBAR */
+.box::-webkit-scrollbar {
+  width: 6px;
+}
+
+.box::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.box::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
+
+.box::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0,0,0,0.5);
+}
+ul{
+    list-style-type: disc;
+    margin-left: 20px;
+}
+h3{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: "Iceberg", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(39, 0, 99);
+}
+h4{
+    padding-left: 15px;
+    padding-right: 10px;
+    font-family: "Iceland", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(23, 0, 235);
+}
+.game{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(163, 15, 255, 0.596);
+    margin : auto;
+    position: relative;
+    top: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(44, 2, 255);
+}
+.timer{
+    background-color: rgb(224, 224, 224);
+    box-shadow: 0 0 5px black;
+    z-index: 2;
+}
+.progress{
+    width: 85%;
+    height: 10px;
+    background-color: rgb(222, 222, 222);
+    position: relative;
+    top: 18px;
+    left: 30px;
+    border-radius: 3px;
+    box-shadow: 0 0 3px black;
+}
+.green{
+    width: 95%;
+    height: 3px;
+    background-color: rgb(51, 255, 0);
+    border-radius: 10px;
+    position: relative;
+    top: 3.5px;
+    left: 5px;
+    box-shadow: 0 0 1px;
+}
+.target{
+    margin: 3.5rem 2rem 1rem 2.2rem;
+}
+.btn{
+    width: 5.5rem;
+    height: 2rem;
+    background-color: rgba(66, 255, 246, 0.759);
+    margin: 1rem auto;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    box-shadow: 0 0 10px black;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: medium;
+}
+.options{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin: auto;
+    /* background-color: grey; */
+    align-items: center;
+}
+.right{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    opacity: 0;
+    scale: 0.5;
+}
+.wrong{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0;
+    scale: 0.5;
+}
+.score{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.score, .score span{
+    font-family: "Iceland", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: large;
+}
+.result{
+    width: 80%;
+    height: 80%;
+    position: relative;
+    left: 10%;
+    top: 10%;
+    border-radius: 0.5rem;
+}
+.result h4{
+      font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  font-size: small;
+  display: none;
+}
+body h1{
+    position: absolute;
+    z-index: 2;
+    font-family: "Special Gthic Expanded One", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    pointer-events: none;
+    color: rgba(255, 255, 255, 0.516);
+    font-size: 3rem;
+    transform: rotate(-30deg)translate(-150%,-50%);
+    opacity: 0;
+}

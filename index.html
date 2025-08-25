@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html class="overflow-hidden" lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catch the coloros</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Iceberg&family=Iceland&family=Protest+Riot&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+</head>
+
+<body class="overflow-hidden min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500">
+  <h1>VINOD MP</h1>
+
+  <!-- Game Container -->
+  <div class="w-[90%] max-w-sm h-[90vh] bg-gray-100 rounded-xl flex flex-col shadow-xl p-6">
+    <div class="home w-full h-full">
+      <div id="logo"><div class="parent m-auto"><img src="./Images/Group 9.png" class="scale-90"><div><img src="./Images/Group 10.png" class="child"></div></div></div>
+      <div class="w-[100%] title"><h3 class="how mt-4 mb-1">HOW TO PLAY</h3></div>
+      <div class="box mb-2 scrollbox bg-blue-200 w-[100%] h-[70%] rounded-md">
+       <h3>Game Time:</h3><h4>You have 40 seconds to score as much as possible.</h4>
+       <h3>Target Color:</h3><h4>A target color will be shown at the top.</h4>
+       <h3>4 Options:</h3><h4>You’ll see 4 buttons, each with a color word in a specific text color.</h4>
+       <h3>Your Task:</h3><h4>Click the option where the text color matches the target color.Ignore the word written and the background color — focus only on the text color.</h4>
+       <div class="w-[90%] m-auto"><img src="./Images/Frame 1.png"></div>
+       <h3>Scoring:</h3><h4>Correct = +1 point, Wrong = -1 point</h4>
+      </div>
+      <div class="start"><img src="./Images/Group 8.png" class="img scale-75 align-middle m-auto cursor-pointer"></div>
+    </div>
+    <div class="maingame">
+      <!-- <div><div id="logo"><div class="parent m-auto"><img src="./Images/Group 9.png" class="scale-90"><div><img src="./Images/Group 10.png" class="child"></div></div></div></div> -->
+      <div class="game">
+        <div class="timer w-7 h-7 rounded-full absolute top-2 left-2"><h4 class="pl-1.5 pt-[3px] text-black">40</h4></div><div class="progress"><div class="green"></div></div>
+        <div class="target">
+          <h3>Target : <span>RED</span></h3>
+        </div>
+        <div class="options">
+          <button class="btn btn0">o</button>
+          <button class="btn btn1">o</button>
+          <button class="btn btn2">o</button>
+          <button class="btn btn3">o</button>
+        </div>
+        <div><img src="./Images/tick-mark-icon.png" class="right"><div class="wrong"><img src="./Images/incorrect-icon.png"></div></div>
+        <div class="score">Score : <span>0</span></div>
+        <div class="result flex flex-col items-center justify-center">
+          <h4>YOUR SCORE : <span>0</span></h4>
+          <div class="restart hidden"><img src="./Images/Frame 2.png" class="scale-75"></div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./script.js"></script>
+</body>
+</html>
