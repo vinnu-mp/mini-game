@@ -44,7 +44,10 @@ gsap.to("body h1",{
         gsap.to("body h1",{
             transform: "translate(50%,-200%)",
             duration:1,
-            opacity:0
+            opacity:0,
+            onComplete:()=>{
+                document.querySelector("body h1").style.display="none";
+            }
         })
     }
 })
@@ -207,3 +210,4 @@ start.addEventListener("click",()=>{
 document.querySelector(".restart").addEventListener("click",()=>{
     location.reload(); 
 })
+
