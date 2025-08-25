@@ -1,6 +1,7 @@
 let tl1 = gsap.timeline();
 let tl2=gsap.timeline();
 let tl3 = gsap.timeline();
+let tl4 = gsap.timeline();
 
 tl1.to(".right",{
     opacity:1,
@@ -34,21 +35,19 @@ tl3.to(".green",{
 })
 tl3.pause()
 
-gsap.to("body h1",{
+tl4.to("body h1",{
     transform: "translate(0%,-100%)rotate(0deg)",
     duration:1.5,
     opacity:0.5,
-    delay:1,
-    ease:"none",
+    delay:0.5,
+    ease:"none"
+})
+tl4.to("body h1",{
+    transform: "translate(50%,-200%)",
+    duration:1,
+    opacity:0,
     onComplete:()=>{
-        gsap.to("body h1",{
-            transform: "translate(50%,-200%)",
-            duration:1,
-            opacity:0,
-            onComplete:()=>{
-                document.querySelector("body h1").style.display="none";
-            }
-        })
+        document.querySelector("body h1").style.display="none";
     }
 })
 
@@ -210,4 +209,5 @@ start.addEventListener("click",()=>{
 document.querySelector(".restart").addEventListener("click",()=>{
     location.reload(); 
 })
+
 
